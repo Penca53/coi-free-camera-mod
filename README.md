@@ -1,8 +1,8 @@
 ﻿# coi-free-camera-mod
 
-Game Version (Comptability): 0.4.2a
+Game Version (compatibility): 0.4.2a
 
-Savegame Compatibility: You need to start a new game!
+Savegame compatibility: You need to start a new game!
 
 # Functionality
 
