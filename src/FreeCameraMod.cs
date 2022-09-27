@@ -6,6 +6,8 @@ using Mafi.Unity;
 using Mafi.Core.Prototypes;
 using UnityEngine;
 using Mafi.Unity.InputControl;
+using Mafi.Collections;
+using Mafi.Core.Game;
 
 namespace FreeCameraMod
 {
@@ -36,5 +38,7 @@ namespace FreeCameraMod
         {
             depBuilder.RegisterDependency<FreeCameraMenuController>().AsSelf().AsAllInterfaces();
         }
+
+        public void ChangeConfigs(Lyst<IConfig> configs) { }
     }
 }
