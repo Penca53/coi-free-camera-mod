@@ -6,13 +6,15 @@ using Mafi.Unity;
 using Mafi.Core.Prototypes;
 using UnityEngine;
 using Mafi.Unity.InputControl;
+using Mafi.Collections;
+using Mafi.Core.Game;
 
 namespace FreeCameraMod
 {
     public sealed class FreeCameraMod : IMod
     {
         public string Name => "Free Camera Mod";
-        public int Version => 2;
+        public int Version => 3;
         public bool IsUiOnly => false;
 
         public FreeCameraMod(CoreMod coreMod, BaseMod baseMod)
@@ -35,6 +37,11 @@ namespace FreeCameraMod
         public void RegisterDependencies(DependencyResolverBuilder depBuilder, ProtosDb protosDb, bool gameWasLoaded)
         {
             depBuilder.RegisterDependency<FreeCameraMenuController>().AsSelf().AsAllInterfaces();
+        }
+
+        public void ChangeConfigs(Lyst<IConfig> configs)
+        {
+
         }
     }
 }

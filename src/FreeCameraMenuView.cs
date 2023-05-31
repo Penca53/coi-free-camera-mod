@@ -67,7 +67,7 @@ namespace FreeCameraMod
                 _btn.SetText("Unconstrained");
             }
             _cameraModel.SetMode(cameraMode);
-            _btn.SetState(state);
+            _btn.SetIsOn(state);
         }
     }
 }
