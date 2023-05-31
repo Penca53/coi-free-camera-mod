@@ -39,9 +39,6 @@ namespace FreeCameraMod
             depBuilder.RegisterDependency<FreeCameraMenuController>().AsSelf().AsAllInterfaces();
         }
 
-        public void ChangeConfigs(Lyst<IConfig> configs)
-        {
-
-        }
+        public void ChangeConfigs(Lyst<IConfig> configs) { }
     }
 }
