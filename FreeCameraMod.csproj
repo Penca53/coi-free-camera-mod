@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<OutputType>Library</OutputType>
-		<TargetFramework>net46</TargetFramework>
+		<TargetFramework>net471</TargetFramework>
 		<Configurations>Debug;Release</Configurations>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 	</PropertyGroup>
@@ -26,9 +26,6 @@
 	</PropertyGroup>
 
 		<ItemGroup>
-		<Reference Include="Cinemachine">
-		  <HintPath>deps\Cinemachine.dll</HintPath>
-		</Reference>
 		<Reference Include="Facepunch.Steamworks.Win64">
 		  <HintPath>deps\Facepunch.Steamworks.Win64.dll</HintPath>
 		</Reference>
@@ -53,21 +50,36 @@
 		<Reference Include="mscorlib">
 		  <HintPath>deps\mscorlib.dll</HintPath>
 		</Reference>
+		<Reference Include="netstandard">
+		  <HintPath>deps\netstandard.dll</HintPath>
+		</Reference>
 		<Reference Include="System" />
+		<Reference Include="System.ComponentModel.Composition">
+		  <HintPath>deps\System.ComponentModel.Composition.dll</HintPath>
+		</Reference>
 		<Reference Include="System.Configuration">
 		  <HintPath>deps\System.Configuration.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Data.DataSetExtensions">
+		  <HintPath>deps\System.Data.DataSetExtensions.dll</HintPath>
 		</Reference>
 		<Reference Include="System.EnterpriseServices">
 		  <HintPath>deps\System.EnterpriseServices.dll</HintPath>
 		</Reference>
+		<Reference Include="System.IO.Compression">
+		  <HintPath>deps\System.IO.Compression.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Net.Http">
+		  <HintPath>deps\System.Net.Http.dll</HintPath>
+		</Reference>
 		<Reference Include="System.Security">
 		  <HintPath>deps\System.Security.dll</HintPath>
 		</Reference>
+		<Reference Include="System.ServiceModel.Internals">
+		  <HintPath>deps\System.ServiceModel.Internals.dll</HintPath>
+		</Reference>
 		<Reference Include="System.Transactions">
 		  <HintPath>deps\System.Transactions.dll</HintPath>
-		</Reference>
-		<Reference Include="Unity.Analytics.DataPrivacy">
-		  <HintPath>deps\Unity.Analytics.DataPrivacy.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.InternalAPIEngineBridge.003">
 		  <HintPath>deps\Unity.InternalAPIEngineBridge.003.dll</HintPath>
@@ -125,6 +137,9 @@
 		</Reference>
 		<Reference Include="UnityEngine.ClusterRendererModule">
 		  <HintPath>deps\UnityEngine.ClusterRendererModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ContentLoadModule">
+		  <HintPath>deps\UnityEngine.ContentLoadModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.CoreModule">
 		  <HintPath>deps\UnityEngine.CoreModule.dll</HintPath>
@@ -186,6 +201,9 @@
 		<Reference Include="UnityEngine.ProfilerModule">
 		  <HintPath>deps\UnityEngine.ProfilerModule.dll</HintPath>
 		</Reference>
+		<Reference Include="UnityEngine.PropertiesModule">
+		  <HintPath>deps\UnityEngine.PropertiesModule.dll</HintPath>
+		</Reference>
 		<Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
 		  <HintPath>deps\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
 		</Reference>
@@ -240,17 +258,11 @@
 		<Reference Include="UnityEngine.UIElementsModule">
 		  <HintPath>deps\UnityEngine.UIElementsModule.dll</HintPath>
 		</Reference>
-		<Reference Include="UnityEngine.UIElementsNativeModule">
-		  <HintPath>deps\UnityEngine.UIElementsNativeModule.dll</HintPath>
-		</Reference>
 		<Reference Include="UnityEngine.UIModule">
 		  <HintPath>deps\UnityEngine.UIModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.UmbraModule">
 		  <HintPath>deps\UnityEngine.UmbraModule.dll</HintPath>
-		</Reference>
-		<Reference Include="UnityEngine.UNETModule">
-		  <HintPath>deps\UnityEngine.UNETModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.UnityAnalyticsCommonModule">
 		  <HintPath>deps\UnityEngine.UnityAnalyticsCommonModule.dll</HintPath>

@@ -16,7 +16,7 @@ namespace FreeCameraMod
             _cameraModel = cameraModel;
         }
 
-        public ControllerConfig Config => new ControllerConfig
+        public ControllerConfig Config => new()
         {
             DeactivateOnOtherControllerActive = true,
             DeactivateOnNonUiClick = true,

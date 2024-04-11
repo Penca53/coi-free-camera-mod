@@ -24,7 +24,7 @@ namespace FreeCameraMod
                .SetSizeMode(StackContainer.SizeMode.StaticDirectionAligned)
                .SetItemSpacing(5f)
                .SetInnerPadding(new Offset(15, 15, 15, 15))
-               .SetBackground(Mafi.ColorRgba.TransparentBlack)
+               .SetBackground(Mafi.ColorRgba.Black)
                .PutTo(GetContentPanel());
 
             Builder.NewTitle("CameraControllerTitle")
